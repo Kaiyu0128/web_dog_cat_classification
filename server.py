@@ -46,8 +46,8 @@ def result():
             result = 'dog'
         elif prelabel == 1:
             result = 'cat'
-        test_model_percentage = float(prd)
-        return render_template('._result.html', title = 'test result', result = result, test_model_percentage = test_model_percentage)
+        test_model_percentage = prd
+        return render_template('./result.html', title = 'test result', result = result, test_model_percentage = test_model_percentage)
 
 if __name__ == '__main__':
     start_model()
